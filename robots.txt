@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ats-business-hub.github.io/toushi-fx-nyumon/sitemap.xml
