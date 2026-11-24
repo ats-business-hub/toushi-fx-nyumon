@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【2026年11月版】FXの証拠金とレバレッジの仕組み｜はじめての投資・FX入門</title>
+  <meta name="description" content="証拠金、レバレッジ、ロスカット、追証の仕組みを、2026年11月24日時点の金融庁・金融先物取引業協会と各社の公式情報で整理します。特定の会社の推奨ではありません。利益は保証しません。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="【2026年11月版】FXの証拠金とレバレッジの仕組み｜はじめての投資・FX入門">
+  <meta property="og:description" content="証拠金、レバレッジ、ロスカット、追証の仕組みを、2026年11月24日時点の金融庁・金融先物取引業協会と各社の公式情報で整理します。特定の会社の推奨ではありません。利益は保証しません。">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://ats-business-hub.github.io/toushi-fx-nyumon/articles/fx-margin-leverage/">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-desktop">
+      <div class="header-inner">
+        <a class="brand" href="../../">
+          <span class="mark">投</span>
+          <span class="brand-text">
+            <span class="brand-name">はじめての投資・FX入門</span>
+            <span class="brand-tag">仕組みとリスクを先に整理する</span>
+          </span>
+        </a>
+        <label class="nav-toggle" for="nav-check" aria-label="メニューを開く"><span></span></label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <nav class="site-nav" aria-label="主要">
+        <ul>
+          <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <article class="wrap">
+      <header class="article-header measure">
+        <nav class="crumbs" aria-label="パンくず"><a href="../../">トップ</a> ／ <a href="../../categories/fx/">FX</a> ／ 【2026年11月版】FXの証拠金とレバレッジの仕組み</nav>
+        <p class="kicker">FX</p>
+        <h1>【2026年11月版】FXの証拠金とレバレッジの仕組み</h1>
+        <p class="meta">公開日（サイト原稿）：2026-11-24　記述の基準日：2026-11-24</p>
+      </header>
+      <div class="measure">
+        <p class="pr-notice"><strong>広告（PR）について。</strong>本記事には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）リンクが含まれます。リンク経由で申し込みや利用があった場合、運営者が紹介料を受け取ることがあります。リンクはテキストのみです。就職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。各サービスの対象条件・成果地点・料金は、申し込み前に公式ページで確認してください。</p>
+        <div class="article-body">
+          <p class="next-step-jump"><a href="#next-step">▶ 公式ページで確認する窓口の例は「次のステップ」へ（広告を含みます）</a></p>
+
+<p><strong>※本記事はプロモーション（アフィリエイト広告）を含みます。</strong></p>
+<p>本記事の数字やルールは、2026年11月24日に金融庁・金融先物取引業協会（以下「協会」）と各FX会社の公式ページで確認したものです。制度や各社のルールは変わることがあるため、取引前に必ず最新の公式情報をご確認ください。</p>
+<p>この記事では、FXの「証拠金」「レバレッジ」「ロスカット」「追証」などを、公的機関と各社の公式説明だけをもとに整理します。会社の優劣やランキングは扱いません。特定の会社や口座の推奨ではありません。利益や元本は保証しません。</p>
+<h2>証拠金とは何か</h2>
+<p>金融庁は、FX（外国為替証拠金取引）を、証拠金を差し入れて2つの国の通貨の為替相場を予測して売買する金融商品だと説明しています（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁「外国為替証拠金取引について」</a>）。証拠金は、取引のために業者へ預ける担保のようなお金です。</p>
+<p>同じページで金融庁は、FXは資金効率が良い反面、「証拠金以上の損失が生じるおそれがあり、元本も利益も保証されない取引」だと明記しています。「少額で始められる」ことと「損失が少額で済む」ことは別の話です。</p>
+<h2>必要証拠金の計算</h2>
+<h3>個人は「取引金額の4％以上」＝レバレッジ25倍以下</h3>
+<p>金融庁によると、個人が店頭FXを行う場合は、通貨ペアの種類を問わず、取引金額に対して4％以上の証拠金を差し入れ、維持する必要があります。レバレッジに換算すると25倍以下です（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</p>
+<p>協会は、金融商品取引業等に関する内閣府令（金商業等府令）の改正により、取引の額（想定元本）の4％以上の預託を受けずに個人とFX取引を行うことが業者に禁止された、と解説しています。施行日の2010年8月1日から1年間は2％（上限50倍）、2011年8月1日以降は4％（上限25倍）です。4％以上の預託が義務付けられるのは、新規建玉時と、業者が営業日ごとに1日1回以上定める時刻（証拠金率判定時刻）です。協会の同じ解説では、この規制は金商業等府令第117条第1項第27号および第28号の禁止行為として追加されたと説明されています（<a href="https://www.ffaj.or.jp/regulation/customers/" target="_blank" rel="noopener noreferrer">協会：個人顧客の証拠金規制の解説</a>）。</p>
+<h3>計算式の基本</h3>
+<p>規制上の下限は、次のように整理できます。</p>
+<ul>
+<li>必要証拠金 ＝ 為替レート × 取引数量 × 4％</li>
+<li>これは「為替レート × 取引数量 ÷ 25（倍）」と同じです</li>
+</ul>
+<p>ただし、使うレートや端数処理は会社で異なります。たとえばSBI FXトレードは対円で前営業日終了時点の仲値（<a href="https://www.sbifxt.co.jp/service/index.html" target="_blank" rel="noopener noreferrer">SBI FXトレード</a>）、楽天FXはビッドとアスクの中心値を用います（<a href="https://www.rakuten-sec.co.jp/web/fx/rule/leverage/" target="_blank" rel="noopener noreferrer">楽天証券</a>）。</p>
+<h3>公式の計算例（いずれも仮定）</h3>
+<blockquote>
+<p><strong>注意</strong>：以下は公式ページの説明用の仮定であり、現在の必要証拠金や損益そのものではありません。</p>
+</blockquote>
+<ul>
+<li><strong>協会の例</strong>：1米ドル＝100円00銭で1万米ドルを買うと、取引額は100万円。証拠金4万円（100万円×4％）以上の預託が必要です（<a href="https://www.ffaj.or.jp/learning/?p=15" target="_blank" rel="noopener noreferrer">協会 学習ページ</a>）。</li>
+<li><strong>SBI FXトレードの例</strong>：米ドル/円の仲値を150.00円と仮定すると、150.00÷25＝6円が1通貨あたりの必要証拠金。1万通貨なら6円×10,000＝60,000円です（<a href="https://www.sbifxt.co.jp/beginner/step03_5.html" target="_blank" rel="noopener noreferrer">SBI FXトレード 初心者ガイド</a>）。</li>
+</ul>
+<h2>有効証拠金と証拠金維持率</h2>
+<h3>協会の定義は「実預託額」</h3>
+<p>口座の実際の余力を表す規制上の言葉が、協会の「実預託額」です。預けた証拠金に、いま決済したら生じる評価益を加え、評価損を差し引いた額で、評価損益にはスワップポイントの評価損益も含みます（スワップの仕組みは<a href="../fx-swap-point/">FXのスワップポイントとは</a>で整理しています）。確定済みの未払手数料は控除されます（<a href="https://www.ffaj.or.jp/regulation/customers/" target="_blank" rel="noopener noreferrer">協会：個人顧客の証拠金規制の解説</a>）。</p>
+<p>協会は、実預託額を「有効証拠金」や「実質証拠金」と呼んで説明している業者も多い、と注記しています（<a href="https://www.ffaj.or.jp/regulation/corporate-customers/" target="_blank" rel="noopener noreferrer">協会：法人顧客の証拠金規制の解説</a>）。</p>
+<h3>証拠金維持率の呼び方と式</h3>
+<p>証拠金維持率は、大まかには「口座の余力÷必要証拠金×100」で、各社の呼び方は次のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>会社</th>
+<th>公式の呼び方・式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>みんなのFX</td>
+<td>証拠金維持率＝純資産÷必要証拠金×100（<a href="https://min-fx.jp/lineup/fx/service/losscut/" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+<tr>
+<td>SBI FXトレード</td>
+<td>取引必要証拠金に対する純資産の割合（<a href="https://www.sbifxt.co.jp/beginner/step03_5.html" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+<tr>
+<td>松井証券</td>
+<td>口座維持率＝（総資産－注文証拠金）÷ポジション必要証拠金×100（<a href="https://www.matsui.co.jp/fx/rule/" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+<tr>
+<td>GMOクリック証券</td>
+<td>証拠金維持率＝時価評価総額÷必要証拠金（<a href="https://www.click-sec.com/corp/guide/fxneo/rule/" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+<tr>
+<td>外為どっとコム</td>
+<td>有効比率＝有効評価額÷必要保証金額×100（<a href="https://faq.gaitame.com/faq/show/1380" target="_blank" rel="noopener noreferrer">公式FAQ</a>）</td>
+</tr>
+<tr>
+<td>楽天証券（楽天FX）</td>
+<td>証拠金維持率＝純資産評価額÷必要証拠金（<a href="https://www.rakuten-sec.co.jp/web/fx/rule/losscut/" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+</tbody>
+</table>
+<p>各社の口座の違いを取引条件の面から見たい場合は、<a href="../fx-5sha-hikaku/">FX会社5社を公式データで比較</a>もあわせてご覧ください。</p>
+<h2>ロスカット</h2>
+<h3>ロスカットの仕組みと限界</h3>
+<p>金融庁は、業者がロスカットルールを定め、評価損が取り決めた水準に達したら建玉を強制決済すると説明しています。そのうえで、相場が急激に変動したときは、ロスカットルールが適用されても証拠金の額を上回る損失が生じることがある、と注意しています（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</p>
+<p>協会は、ロスカット取引は必ず約束した損失の額で限定するものではなく、水準に達してから決済手続が始まるため、実際の損失は水準より大きくなる場合がある、と説明しています（<a href="https://www.ffaj.or.jp/regulation/loss-cut-rules/" target="_blank" rel="noopener noreferrer">協会：ロスカット・ルールの解説</a>）。</p>
+<h3>水準は会社によって違う</h3>
+<p>水準は各社で異なるため、契約締結前交付書面などでの確認が必要です（<a href="https://www.ffaj.or.jp/learning/?p=27" target="_blank" rel="noopener noreferrer">協会 学習ページ</a>）。個人口座の例は次のとおりです。</p>
+<ul>
+<li><strong>SBI FXトレード</strong>：証拠金維持率50％割れで強制決済（<a href="https://www.sbifxt.co.jp/service/index.html" target="_blank" rel="noopener noreferrer">公式</a>）。</li>
+<li><strong>松井証券</strong>：個人口座は50％・60％・70％・80％・90％から選択。公式FAQによると、口座開設時の初期設定は50％です（<a href="https://www.matsui.co.jp/fx/rule/" target="_blank" rel="noopener noreferrer">取引ルール</a>、<a href="https://support.matsui.co.jp/faq/show/25559?site_domain=faq" target="_blank" rel="noopener noreferrer">FAQ</a>）。</li>
+<li><strong>みんなのFX</strong>：証拠金維持率100％以下で全ポジションを成行で決済（約定価格や損失額の保証なし）（<a href="https://min-fx.jp/lineup/fx/service/losscut/" target="_blank" rel="noopener noreferrer">公式</a>）。</li>
+<li><strong>GMOクリック証券</strong>：証拠金維持率50％割れで反対売買（手数料あり）（<a href="https://www.click-sec.com/corp/guide/fxneo/rule/" target="_blank" rel="noopener noreferrer">公式</a>）。</li>
+<li><strong>外為どっとコム</strong>：100％〜50％で10％刻みに設定でき、初期設定は100％（<a href="https://www.gaitame.com/service/fx/rules/losscut/" target="_blank" rel="noopener noreferrer">公式</a>）。</li>
+<li><strong>楽天FX</strong>：口座開設時は「スタンダード25倍コース・ロスカット水準50%」（<a href="https://www.rakuten-sec.co.jp/web/fx/rule/leverage/" target="_blank" rel="noopener noreferrer">公式</a>）。</li>
+</ul>
+<h2>追証（追加証拠金）</h2>
+<h3>規制上の考え方</h3>
+<p>協会によると、証拠金率判定時刻に実預託額が必要証拠金（個人は取引額の4％）を下回った場合、業者は不足額を充当させずに取引を続けさせることはできません。充当は追加預託、一部決済、全部決済のいずれかです。評価損の回復を待って不足を帳消しにする運用は適当でないとされ、いったん認識した不足額は、期限時点で評価が回復していても充当か全部決済が必要です（<a href="https://www.ffaj.or.jp/regulation/customers/" target="_blank" rel="noopener noreferrer">協会：個人顧客の証拠金規制の解説</a>）。</p>
+<h3>各社の有無と期限（個人）</h3>
+<table>
+<thead>
+<tr>
+<th>会社</th>
+<th>追証</th>
+<th>公式の内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SBI FXトレード</td>
+<td>あり</td>
+<td>翌営業日の取引終了30分前までに不足の解消が確認できなければ全ポジション決済（<a href="https://www.sbifxt.co.jp/service/index.html" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+<tr>
+<td>松井証券</td>
+<td>あり</td>
+<td>口座維持率100％割れで発生。翌取引日（祝祭日を含む）15:00までに入金または決済（<a href="https://www.matsui.co.jp/fx/rule/" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+<tr>
+<td>みんなのFX</td>
+<td>なし</td>
+<td>現行FAQで「追加証拠金（追証）制度はございません」（<a href="https://help.min-fx.jp/%E3%80%8C%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AEFX%E3%80%8D%E3%81%AE%E3%83%AD%E3%82%B9%E3%82%AB%E3%83%83%E3%83%88%E3%81%AF%E3%81%84%E3%81%A4%E8%A1%8C%E3%82%8F%E3%82%8C%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F-656d566b92850c0022e9e9d5" target="_blank" rel="noopener noreferrer">公式FAQ</a>）</td>
+</tr>
+<tr>
+<td>GMOクリック証券</td>
+<td>あり</td>
+<td>翌営業日（祝日を除く）午前3:00まで。相場回復で維持率が100％を超えても解消にならない（<a href="https://www.click-sec.com/corp/guide/fxneo/rule/" target="_blank" rel="noopener noreferrer">公式</a>）</td>
+</tr>
+<tr>
+<td>外為どっとコム</td>
+<td>なし</td>
+<td>FAQで「追加証拠金（追証）の制度がありません」（<a href="https://faq.gaitame.com/faq/show/3836?category_id=81&amp;site_domain=default" target="_blank" rel="noopener noreferrer">公式FAQ</a>）</td>
+</tr>
+<tr>
+<td>楽天FX</td>
+<td>25倍コースと法人のみ</td>
+<td>公式のレバレッジ説明では、10倍・5倍・2倍・1倍コースの追加証拠金は「無し」。25倍コースと法人は、取引日終了時点の評価で証拠金維持率が100％未満なら発生。相場回復だけでは解消にならない（<a href="https://www.rakuten-sec.co.jp/web/fx/rule/margin/" target="_blank" rel="noopener noreferrer">追証</a>、<a href="https://www.rakuten-sec.co.jp/web/fx/rule/leverage/" target="_blank" rel="noopener noreferrer">レバレッジコース</a>）</td>
+</tr>
+</tbody>
+</table>
+<p>なお、外為どっとコムでは、急変時にロスカット後も証拠金を超える損失が出た場合、発生日の翌々営業日の午後3時までの入金が必要と案内されています。この「不足金」は追証制度とは別のものです（<a href="https://www.gaitame.com/service/fx/rules/losscut/" target="_blank" rel="noopener noreferrer">外為どっとコム</a>）。「追証なし」は「証拠金以上の損失が出ない」という意味ではありません。</p>
+<p>追証の有無はレバレッジのコース設定とも関係します。口座ごとの違いを整理したい方は、<a href="../fx-5sha-hikaku/">FX会社5社を公式データで比較</a>も参考にしてください。</p>
+<h2>法人レバレッジの概要</h2>
+<p>法人の場合は、個人のような「全通貨一律4％」ではありません。金融庁は、法人の店頭FXでは通貨ペアごとに、過去の相場をもとに算出される額以上の証拠金が必要だとしています（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</p>
+<p>協会の解説では、2017年2月27日の施行以降、必要証拠金は取引額に通貨ペアごとの「為替リスク想定比率」を掛けた額で、比率は少なくとも週1回見直されます。業者は協会が計算・公表する数値も利用でき、協会は毎週金曜日に比率とレバレッジ換算値を公表しています（<a href="https://www.ffaj.or.jp/regulation/corporate-customers/" target="_blank" rel="noopener noreferrer">協会：法人顧客の証拠金規制の解説</a>、<a href="https://www.ffaj.or.jp/learning/?p=72" target="_blank" rel="noopener noreferrer">協会 学習ページ</a>）。</p>
+<p>協会の説明例では、1米ドル100円で1万米ドルを買い、比率が1.5％なら必要証拠金は1万5千円です。<strong>これは公式ページの説明用の仮定であり、現在の法人の必要証拠金ではありません。</strong></p>
+<h2>レバレッジと損益の関係</h2>
+<p>協会は、レバレッジを「取引額が証拠金の何倍か」を示す数字と説明しています。次は協会の例（1米ドル＝100円00銭、証拠金100万円の仮定）です（<a href="https://www.ffaj.or.jp/learning/?p=15" target="_blank" rel="noopener noreferrer">協会 学習ページ</a>）。</p>
+<ul>
+<li><strong>レバレッジ1倍</strong>：1万米ドルを買い、101円で決済すると1万円の利益、99円で決済すると1万円の損失</li>
+<li><strong>レバレッジ5倍</strong>：5万米ドルを買うと、同じ1円の動きで利益も損失も5万円</li>
+</ul>
+<p>協会は、レバレッジを利用すると利益も大きくなる反面、損失も大きくなるので注意が必要だとしています（同ページ）。この例も<strong>公式ページの説明用の仮定であり、現在の損益そのものではありません。</strong></p>
+<p>なお、規制上の上限は25倍でも、松井証券や楽天FXのようにコースでレバレッジを低く選べる会社があります（<a href="https://www.matsui.co.jp/fx/rule/" target="_blank" rel="noopener noreferrer">松井証券</a>、<a href="https://www.rakuten-sec.co.jp/web/fx/rule/leverage/" target="_blank" rel="noopener noreferrer">楽天証券</a>）。上限を超えることはできません。</p>
+<h2>リスクと注意点</h2>
+<ul>
+<li><strong>元本も利益も保証されません</strong>（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</li>
+<li><strong>少額で始められても、差し入れた証拠金以上の損失が生じるおそれがあります</strong>（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>、<a href="https://www.ffaj.or.jp/learning/?p=31" target="_blank" rel="noopener noreferrer">協会</a>）。</li>
+<li><strong>個人の店頭FXは取引金額の4％以上の証拠金が必要で、レバレッジに換算すると25倍以下です</strong>（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</li>
+<li><strong>ロスカット・ルールがあっても、相場の急変時は証拠金を上回る損失が生じることがあります</strong>（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>、<a href="https://www.ffaj.or.jp/regulation/loss-cut-rules/" target="_blank" rel="noopener noreferrer">協会</a>）。</li>
+<li><strong>レバレッジは利益だけでなく損失も拡大します</strong>（<a href="https://www.ffaj.or.jp/learning/?p=15" target="_blank" rel="noopener noreferrer">協会</a>）。</li>
+<li>無登録業者に注意し、取引前に登録を確認しましょう（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</li>
+</ul>
+<h2>初心者向けFAQ</h2>
+<h3>Q1. 証拠金が少額なら、損失も少額で済みますか？</h3>
+<p>いいえ。金融庁は、FXは証拠金以上の損失が生じるおそれがある取引だと明記しています（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</p>
+<h3>Q2. 個人でも25倍より高いレバレッジにできますか？</h3>
+<p>個人の店頭FXは取引金額の4％以上の証拠金が必要で、25倍が上限です（<a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁</a>）。</p>
+<h3>Q3. ロスカットがあれば、損失は必ず証拠金の範囲に収まりますか？</h3>
+<p>いいえ。協会は、ロスカットは損失を必ず約束した額で限定するものではないとしています（<a href="https://www.ffaj.or.jp/regulation/loss-cut-rules/" target="_blank" rel="noopener noreferrer">協会</a>）。</p>
+<h3>Q4. 追証が出たら、相場の回復を待てば解消しますか？</h3>
+<p>協会は、評価の回復を待って不足を帳消しにする運用は適当でないとしています（<a href="https://www.ffaj.or.jp/regulation/customers/" target="_blank" rel="noopener noreferrer">協会</a>）。</p>
+<h2>まとめ</h2>
+<p>証拠金は取引の担保で、個人は取引金額の4％以上（25倍以下）が必要です。証拠金維持率が会社ごとの水準を下回るとロスカットになり、追証の有無や期限も会社で異なります。どの仕組みも損失を必ず限定するものではないため、取引前に最新の公式情報を確認してください。</p>
+<section class="next-step" id="next-step">
+<h2>次のステップ：公式ページで確認する</h2>
+<p><strong>広告（PR）。</strong>公式案内を確認する窓口の一例として、<a href="https://px.a8.net/svt/ejp?a8mat=4BGO4J+EBLHQQ+3XCC+5YJRM" target="_blank" rel="sponsored nofollow noopener noreferrer">松井証券</a>、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCH+GDF8R6+1WP2+69WPU" target="_blank" rel="sponsored nofollow noopener noreferrer">DMM FX</a>、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCL+12PA6Q+48D0+68EPE" target="_blank" rel="sponsored nofollow noopener noreferrer">FXTF</a>があります。推奨ではありません。投資の利益、元本の保全、税負担の軽減は保証しません。最新の必要証拠金・レバレッジ・ロスカット・追証は、各社の公式サイトでご確認ください。</p>
+<p>関連する確認は、<a href="../../articles/fx-5sha-hikaku/">FX会社5社を公式データで比較</a>、<a href="../../articles/fx-swap-point/">FXのスワップポイントとは</a>、<a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a>、<a href="../../articles/fx-1000tsuka-hajime/">FXを少額（1,000通貨）から始める方法</a>も見てください。</p>
+</section>
+
+<h2>出典（2026年11月24日確認）</h2>
+<ul>
+<li><a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁「外国為替証拠金取引について」</a></li>
+<li><a href="https://www.ffaj.or.jp/regulation/customers/" target="_blank" rel="noopener noreferrer">金融先物取引業協会「個人顧客を相手方とするFX取引に係る証拠金規制」</a></li>
+<li><a href="https://www.ffaj.or.jp/regulation/corporate-customers/" target="_blank" rel="noopener noreferrer">金融先物取引業協会「法人顧客を相手方とする店頭FX取引に係る証拠金規制」</a></li>
+<li><a href="https://www.ffaj.or.jp/regulation/loss-cut-rules/" target="_blank" rel="noopener noreferrer">金融先物取引業協会「ロスカット・ルールの整備・遵守の義務付け」</a></li>
+<li><a href="https://www.ffaj.or.jp/learning/?p=15" target="_blank" rel="noopener noreferrer">金融先物取引業協会「学ぼう！FX」レバレッジについて</a> ／ <a href="https://www.ffaj.or.jp/learning/?p=27" target="_blank" rel="noopener noreferrer">ロスカット取引について</a> ／ <a href="https://www.ffaj.or.jp/learning/?p=31" target="_blank" rel="noopener noreferrer">リスクについて</a> ／ <a href="https://www.ffaj.or.jp/learning/?p=72" target="_blank" rel="noopener noreferrer">法人の証拠金規制</a></li>
+<li><a href="https://www.sbifxt.co.jp/service/index.html" target="_blank" rel="noopener noreferrer">SBI FXトレード 取引ルール</a> ／ <a href="https://www.sbifxt.co.jp/beginner/step03_5.html" target="_blank" rel="noopener noreferrer">初心者ガイド</a></li>
+<li><a href="https://www.matsui.co.jp/fx/rule/" target="_blank" rel="noopener noreferrer">松井証券 FX取引ルール</a> ／ <a href="https://support.matsui.co.jp/faq/show/25559?site_domain=faq" target="_blank" rel="noopener noreferrer">FAQ「FXのロスカット率の設定方法」</a></li>
+<li><a href="https://min-fx.jp/lineup/fx/service/losscut/" target="_blank" rel="noopener noreferrer">みんなのFX ロスカットについて</a> ／ <a href="https://help.min-fx.jp/%E3%80%8C%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AEFX%E3%80%8D%E3%81%AE%E3%83%AD%E3%82%B9%E3%82%AB%E3%83%83%E3%83%88%E3%81%AF%E3%81%84%E3%81%A4%E8%A1%8C%E3%82%8F%E3%82%8C%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F-656d566b92850c0022e9e9d5" target="_blank" rel="noopener noreferrer">FAQ「ロスカットはいつ行われますか？」</a></li>
+<li><a href="https://www.click-sec.com/corp/guide/fxneo/rule/" target="_blank" rel="noopener noreferrer">GMOクリック証券 FXネオ取引ルール</a></li>
+<li><a href="https://www.gaitame.com/service/fx/rules/losscut/" target="_blank" rel="noopener noreferrer">外為どっとコム ロスカットルールと注意点</a> ／ <a href="https://faq.gaitame.com/faq/show/3836?category_id=81&amp;site_domain=default" target="_blank" rel="noopener noreferrer">FAQ「追加証拠金（追証）制度はありますか？」</a></li>
+<li><a href="https://www.rakuten-sec.co.jp/web/fx/rule/margin/" target="_blank" rel="noopener noreferrer">楽天証券 追証（追加証拠金）</a> ／ <a href="https://www.rakuten-sec.co.jp/web/fx/rule/leverage/" target="_blank" rel="noopener noreferrer">必要証拠金・レバレッジコース</a> ／ <a href="https://www.rakuten-sec.co.jp/web/fx/rule/losscut/" target="_blank" rel="noopener noreferrer">ロスカット</a></li>
+</ul>
+        </div>
+        <p class="article-endnote">本記事は一般的な情報提供です。税務助言、投資助言、特定の商品・業者・求人の推奨ではありません。制度やサービス内容は変わることがあります。最新の公式情報を確認してください。確認できていない事項は「未確認」と表示しています。就職、収入、税負担の軽減、投資の利益、最安値などは保証できません。</p>
+        <section class="related"><h2>関連する記事</h2><ul><li><a href="../../articles/fx-spread-swap/">FXのスプレッドとスワップは、どこを公式で確認するか</a></li><li><a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a></li><li><a href="../../articles/fx-benkyo-hon/">FXの勉強に役立つ本の選び方</a></li><li><a href="../../articles/fx-koza-kakunin/">FX口座を開く前に、取引単位・取引時間・登録情報を確認する</a></li></ul></section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul class="footer-nav">
+        <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+      </ul>
+      <nav class="sister-sites" aria-label="姉妹サイト">
+        <h2>姉妹サイト</h2>
+        <ul>
+        <li><a href="https://ats-business-hub.github.io/jitsumu-guide/">BON ZAM SHIBA｜働く人の実務ガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/travel-yoyaku-guide/">旅の予約ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/it-tenshoku-guide/">IT転職・社内SEガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/hikari-kaisen-guide/">光回線の申し込み前ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/hoken-sodan-guide/">保険相談の確認ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/online-school-guide/">オンラインスクールの申し込み前ノート</a></li>
+        </ul>
+      </nav>
+      <p>運営：BON ZAM SHIBA　｜　仕組みとリスクを先に整理する</p>
+      <p>記事内のリンクの一部には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）が含まれます。詳細は「プライバシー・広告」をご覧ください。</p>
+      <p>就職、転職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。制度や各サービスの条件は公式情報で確認してください。確認できていない事項は「未確認」と表示します。</p>
+      <p class="small">© 2026 BON ZAM SHIBA</p>
+    </div>
+  </footer>
+</body>
+</html>
