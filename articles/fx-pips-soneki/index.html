@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FXのpipsと損益の計算。注文の前に、1pips動いたらいくら増減するかを確かめる｜はじめての投資・FX入門</title>
+  <meta name="description" content="FXの値動きは「pips（ピップス）」や「銭」で表されます。円がからむ通貨ペアと、ドル・ユーロなどの通貨ペアで1pipsの大きさが違うこと、取引数量によって1pipsあたりの損益がどう変わるか、スプレッドをpipsで見たときのコストの考え方を、計算例で整理します。利益は保証しません。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="FXのpipsと損益の計算。注文の前に、1pips動いたらいくら増減するかを確かめる｜はじめての投資・FX入門">
+  <meta property="og:description" content="FXの値動きは「pips（ピップス）」や「銭」で表されます。円がからむ通貨ペアと、ドル・ユーロなどの通貨ペアで1pipsの大きさが違うこと、取引数量によって1pipsあたりの損益がどう変わるか、スプレッドをpipsで見たときのコストの考え方を、計算例で整理します。利益は保証しません。">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://ats-business-hub.github.io/toushi-fx-nyumon/articles/fx-pips-soneki/">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-desktop">
+      <div class="header-inner">
+        <a class="brand" href="../../">
+          <span class="mark">投</span>
+          <span class="brand-text">
+            <span class="brand-name">はじめての投資・FX入門</span>
+            <span class="brand-tag">仕組みとリスクを先に整理する</span>
+          </span>
+        </a>
+        <label class="nav-toggle" for="nav-check" aria-label="メニューを開く"><span></span></label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <nav class="site-nav" aria-label="主要">
+        <ul>
+          <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <article class="wrap">
+      <header class="article-header measure">
+        <nav class="crumbs" aria-label="パンくず"><a href="../../">トップ</a> ／ <a href="../../categories/fx/">FX</a> ／ FXのpipsと損益の計算。注文の前に、1pips動いたらいくら増減するかを確かめる</nav>
+        <p class="kicker">FX</p>
+        <h1>FXのpipsと損益の計算。注文の前に、1pips動いたらいくら増減するかを確かめる</h1>
+        <p class="meta">公開日（サイト原稿）：2026-11-25　記述の基準日：2026-11-25</p>
+      </header>
+      <div class="measure">
+        <p class="pr-notice"><strong>広告（PR）について。</strong>本記事には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）リンクが含まれます。リンク経由で申し込みや利用があった場合、運営者が紹介料を受け取ることがあります。リンクはテキストのみです。就職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。各サービスの対象条件・成果地点・料金は、申し込み前に公式ページで確認してください。</p>
+        <div class="article-body">
+          <p>FXの解説や取引画面では、「10pips上昇」「スプレッド0.2銭」といった表現がよく出てきます。言葉の意味があいまいなままだと、どれだけ動いたら、自分の口座でいくら増えたり減ったりするのかが分からないまま注文してしまいがちです。</p>
+<p>この記事は、pipsと銭の意味と、取引数量ごとの損益の計算のしかたを、例を使って整理したものです。ここで使う数字は、計算の考え方を示すための例で、実際のレートやスプレッドではありません。特定の会社の推奨ではなく、利益は保証できません。FXは元本を割り込むことがあり、レバレッジをかけると損失が大きくなることがあります。</p>
+<h2>pipsと銭の意味</h2>
+<p>pips（ピップス）は、通貨ペアの値動きを表す共通の単位です。1pipsの大きさは、通貨ペアによって違います。</p>
+<table>
+<thead>
+<tr>
+<th>通貨ペアの例</th>
+<th>1pipsの大きさ</th>
+<th>表し方の例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>米ドル/円、ユーロ/円など（円がからむもの）</td>
+<td>0.01円（1銭）</td>
+<td>150.00円→150.10円は10pips（10銭）の上昇</td>
+</tr>
+<tr>
+<td>ユーロ/米ドル、ポンド/米ドルなど</td>
+<td>0.0001ドル</td>
+<td>1.0800→1.0810は10pipsの上昇</td>
+</tr>
+</tbody>
+</table>
+<p>円がからむ通貨ペアでは、1pips＝1銭（0.01円）と考えると分かりやすくなります。会社によっては、画面の表示を0.1pips（0.1銭）の単位まで細かく出していることがあります。</p>
+<h2>取引数量ごとの、1pipsあたりの損益</h2>
+<p>損益は「値動きの幅×取引数量」で考えます。円がからむ通貨ペアなら、次のようになります（計算例）。</p>
+<table>
+<thead>
+<tr>
+<th>取引数量</th>
+<th>1pips（0.01円）動いたとき</th>
+<th>10pips動いたとき</th>
+<th>100pips（1円）動いたとき</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,000通貨</td>
+<td>10円</td>
+<td>100円</td>
+<td>1,000円</td>
+</tr>
+<tr>
+<td>10,000通貨</td>
+<td>100円</td>
+<td>1,000円</td>
+<td>10,000円</td>
+</tr>
+<tr>
+<td>100,000通貨</td>
+<td>1,000円</td>
+<td>10,000円</td>
+<td>100,000円</td>
+</tr>
+</tbody>
+</table>
+<p>たとえば、米ドル/円を10,000通貨買って、レートが1円（100pips）下がったときは、計算上の損失は約10,000円です。上がった場合は同じ額の利益ですが、どちらに動くかは事前に分かりません。取引数量をいくつにするかは、損失がいくらまでなら耐えられるかから逆算するのが基本です。</p>
+<p>ユーロ/米ドルのように円がからまない通貨ペアでは、損益はいったん米ドルで計算され、円に換算されます。10,000通貨で1pips（0.0001ドル）動くと1ドルの損益になり、円での金額は、その時の米ドル/円のレートで変わります。換算の方法とタイミングは、会社の取引説明書で確認してください。</p>
+<h2>スプレッドをpipsで見る</h2>
+<p>買値と売値の差であるスプレッドも、pipsや銭で表されます。新しく取引を始めた時点で、計算上はスプレッドの分だけ損失の状態から始まります。</p>
+<ul>
+<li>例：スプレッドが0.2銭（0.2pips）のとき、10,000通貨の取引では、0.2×100円＝約20円分</li>
+<li>例：同じスプレッドで、1,000通貨なら約2円分</li>
+</ul>
+<p>スプレッドは、時間帯や相場の状況で広がることがあり、表示されている値が常に適用されるとは限りません。会社がどの時間帯にどの値を示しているかは、公式の説明で確認します。スプレッドとスワップの確認先は、<a href="../../articles/fx-spread-swap/">FXのスプレッドとスワップは、どこを公式で確認するか</a>で整理しています。</p>
+<h2>損切りの幅を、金額で決めてから注文する</h2>
+<p>注文の前に、「何pips逆に動いたら決済するか」と「そのときの損失はいくらか」を、計算しておきます。</p>
+<ol>
+<li>1回の取引で受け入れる損失の上限額を決める（生活費には手を付けない範囲で）</li>
+<li>損切りの幅をpipsで決める</li>
+<li>「上限額÷（損切り幅×1pipsあたりの金額）」で、取引数量の目安を出す</li>
+<li>逆指値などの注文で、決めた幅で決済されるように設定する（相場が急に動くと、指定した価格で約定しないことがある）</li>
+</ol>
+<p>レバレッジと必要証拠金の関係は<a href="../../articles/fx-margin-leverage/">【2026年11月版】FXの証拠金とレバレッジの仕組み</a>、証拠金維持率とロスカットの仕組みは<a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a>を見てください。少ない数量から始める場合の考え方は、<a href="../../articles/fx-1000tsuka-hajime/">【2026年11月版】FXを少額（1,000通貨）から始める方法と口座選びの注意点</a>でも整理しています。</p>
+<h2>公式の画面で確認すること</h2>
+<ul>
+<li>最小の取引数量（1,000通貨から、10,000通貨から、など）</li>
+<li>画面のレート表示の桁数と、pips・銭の表示のしかた</li>
+<li>円がからまない通貨ペアの損益の円換算の方法</li>
+<li>スプレッドの提示の条件（時間帯、数量）</li>
+<li>損益のシミュレーション機能があるか</li>
+</ul>
+<p>公式サイトで取引説明書やレート一覧を確認する一例として、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCH+GDF8R6+1WP2+69WPU" target="_blank" rel="sponsored nofollow noopener noreferrer">DMM FX</a>、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCL+12PA6Q+48D0+68EPE" target="_blank" rel="sponsored nofollow noopener noreferrer">FXTF</a>があります。取引数量の単位、表示のしかた、スプレッドは、会社と時期によって違います（最新の内容は<span class="unverified">未確認</span>）。特定の会社を勧めるものではなく、利益や狭いスプレッドの継続は保証できません。FXは元本を割り込むことがあります。最新の手数料・条件は公式サイトでご確認ください。</p>
+<h2>よくある質問</h2>
+<p><strong>1pipsは、いつも1銭ですか。</strong> 円がからむ通貨ペアでは1pips＝1銭（0.01円）として扱うのが一般的です。ユーロ/米ドルなど円がからまない通貨ペアでは、0.0001ドルなど、その通貨の単位で表します。</p>
+<p><strong>スワップポイントもpipsで表されますか。</strong> スワップポイントは、多くの会社で取引数量あたりの円の金額で示されます。表示のしかたは会社によって違うので、公式の一覧で確認してください。</p>
+<p><strong>計算どおりの損益になりますか。</strong> 相場が急に動くと、逆指値が指定した価格より不利な価格で約定することがあります。計算は目安として使い、損失の上限に余裕を持たせてください。</p>
+<h2>まとめ</h2>
+<ul>
+<li>円がからむ通貨ペアでは、1pips＝1銭（0.01円）として考える</li>
+<li>損益は「値動きの幅×取引数量」。10,000通貨なら1pipsで約100円</li>
+<li>スプレッドもpipsで見ると、取引ごとのコストの目安になる</li>
+<li>損失の上限額から、損切り幅と取引数量を逆算してから注文する</li>
+<li>最新の条件は、各社の公式サイトでご確認ください</li>
+</ul>
+        </div>
+        <p class="article-endnote">本記事は一般的な情報提供です。税務助言、投資助言、特定の商品・業者・求人の推奨ではありません。制度やサービス内容は変わることがあります。最新の公式情報を確認してください。確認できていない事項は「未確認」と表示しています。就職、収入、税負担の軽減、投資の利益、最安値などは保証できません。</p>
+        <section class="related"><h2>関連する記事</h2><ul><li><a href="../../articles/fx-spread-swap/">FXのスプレッドとスワップは、どこを公式で確認するか</a></li><li><a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a></li><li><a href="../../articles/fx-benkyo-hon/">FXの勉強に役立つ本の選び方</a></li><li><a href="../../articles/fx-koza-kakunin/">FX口座を開く前に、取引単位・取引時間・登録情報を確認する</a></li></ul></section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul class="footer-nav">
+        <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+      </ul>
+      <nav class="sister-sites" aria-label="姉妹サイト">
+        <h2>姉妹サイト</h2>
+        <ul>
+        <li><a href="https://ats-business-hub.github.io/jitsumu-guide/">BON ZAM SHIBA｜働く人の実務ガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/travel-yoyaku-guide/">旅の予約ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/it-tenshoku-guide/">IT転職・社内SEガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/hikari-kaisen-guide/">光回線の申し込み前ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/hoken-sodan-guide/">保険相談の確認ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/online-school-guide/">オンラインスクールの申し込み前ノート</a></li>
+        </ul>
+      </nav>
+      <p>運営：BON ZAM SHIBA　｜　仕組みとリスクを先に整理する</p>
+      <p>記事内のリンクの一部には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）が含まれます。詳細は「プライバシー・広告」をご覧ください。</p>
+      <p>就職、転職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。制度や各サービスの条件は公式情報で確認してください。確認できていない事項は「未確認」と表示します。</p>
+      <p class="small">© 2026 BON ZAM SHIBA</p>
+    </div>
+  </footer>
+</body>
+</html>
