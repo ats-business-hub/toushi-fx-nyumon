@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FXのスリッページとは。成行・逆指値の注文で、約定価格が見ていた価格とずれる理由と、注文の前に確認すること｜はじめての投資・FX入門</title>
+  <meta name="description" content="FXで成行注文や逆指値注文を出すと、画面で見ていた価格と違う価格で約定することがあります。これをスリッページと呼びます。起きやすい場面、注文の種類ごとの違い、許容する幅を設定できる仕組みの有無、損益への影響の見方を、取引説明書で確認する点として整理します。利益や約定の価格は保証しません。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="FXのスリッページとは。成行・逆指値の注文で、約定価格が見ていた価格とずれる理由と、注文の前に確認すること｜はじめての投資・FX入門">
+  <meta property="og:description" content="FXで成行注文や逆指値注文を出すと、画面で見ていた価格と違う価格で約定することがあります。これをスリッページと呼びます。起きやすい場面、注文の種類ごとの違い、許容する幅を設定できる仕組みの有無、損益への影響の見方を、取引説明書で確認する点として整理します。利益や約定の価格は保証しません。">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://ats-business-hub.github.io/toushi-fx-nyumon/articles/fx-slippage-yakujo/">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-desktop">
+      <div class="header-inner">
+        <a class="brand" href="../../">
+          <span class="mark">投</span>
+          <span class="brand-text">
+            <span class="brand-name">はじめての投資・FX入門</span>
+            <span class="brand-tag">仕組みとリスクを先に整理する</span>
+          </span>
+        </a>
+        <label class="nav-toggle" for="nav-check" aria-label="メニューを開く"><span></span></label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <nav class="site-nav" aria-label="主要">
+        <ul>
+          <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <article class="wrap">
+      <header class="article-header measure">
+        <nav class="crumbs" aria-label="パンくず"><a href="../../">トップ</a> ／ <a href="../../categories/fx/">FX</a> ／ FXのスリッページとは。成行・逆指値の注文で、約定価格が見ていた価格とずれる理由と、注文の前に確認すること</nav>
+        <p class="kicker">FX</p>
+        <h1>FXのスリッページとは。成行・逆指値の注文で、約定価格が見ていた価格とずれる理由と、注文の前に確認すること</h1>
+        <p class="meta">公開日（サイト原稿）：2026-11-27　記述の基準日：2026-11-27</p>
+      </header>
+      <div class="measure">
+        <p class="pr-notice"><strong>広告（PR）について。</strong>本記事には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）リンクが含まれます。リンク経由で申し込みや利用があった場合、運営者が紹介料を受け取ることがあります。リンクはテキストのみです。就職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。各サービスの対象条件・成果地点・料金は、申し込み前に公式ページで確認してください。</p>
+        <div class="article-body">
+<p class="next-step-jump"><a href="#next-step">▶ 比べる点と窓口の例は「次のステップ」へ（広告を含みます）</a></p>
+          <p>FXの取引で、「買いボタンを押したのに、見ていた価格より少し高く買えた」「損切りの逆指値を置いていたのに、思っていたより不利な価格で決済された」と感じることがあります。こうした、注文したときの価格と、実際に約定した価格のずれを、一般にスリッページと呼びます。</p>
+<p>この記事は、スリッページが起きる理由と、注文の前に確認したい点を整理したものです。特定のFX会社を勧めるものではありません。約定の価格や、損失が想定の範囲に収まることは保証できません。FXは元本を割り込むことがあり、レバレッジをかけると損失が大きくなることがあります。約定の仕組みは会社ごとに違うため、最後は各社の取引説明書と公式サイトで確認してください。</p>
+<h2>スリッページが起きる理由</h2>
+<p>FXの価格は、取引時間中、細かく動いています。注文を出してから約定するまでのわずかな時間に価格が動いたり、指定した価格で取引できる相手が足りなかったりすると、約定価格がずれることがあります。</p>
+<ul>
+<li>注文を出してから、会社のシステムで処理されるまでの間に価格が動く</li>
+<li>経済指標の発表や要人の発言などで、価格が短い時間に大きく動く</li>
+<li>早朝や年末年始など、取引が少ない時間帯で、価格が飛びやすい</li>
+<li>週明けの取引開始時に、前週末の終値から離れた価格で始まる（窓開け）</li>
+</ul>
+<p>経済指標の発表時と週明けの窓開けは、<a href="../../articles/fx-shihyo-mado/">経済指標の発表時と週明けの窓開けで、FXの注文に起きやすいこと</a>で整理しています。</p>
+<h2>注文の種類で、ずれ方が違う</h2>
+<table>
+<thead>
+<tr>
+<th>注文の種類</th>
+<th>約定のしかたの一般的な考え方</th>
+<th>スリッページ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>成行注文</td>
+<td>その時の価格で約定させる</td>
+<td>起きることがある。有利にも不利にもずれうる</td>
+</tr>
+<tr>
+<td>指値注文</td>
+<td>指定した価格か、それより有利な価格で約定させる</td>
+<td>不利な方向にはずれないが、約定しないことがある</td>
+</tr>
+<tr>
+<td>逆指値注文（損切りなど）</td>
+<td>指定した価格に達したら、成行に近い形で約定させる会社が多い</td>
+<td>急変時は、指定より不利な価格で約定することがある</td>
+</tr>
+</tbody>
+</table>
+<p>逆指値は「その価格で必ず決済される」注文ではない点に注意してください。価格が飛んだ場合、指定した価格より不利な価格で約定することがあり、想定していた損失額を超えることがあります。どの価格で約定するかの扱いは、会社の取引説明書で確認してください。</p>
+<h2>許容する幅を設定できる仕組み</h2>
+<p>FX会社によっては、成行注文などで、注文時の価格から何pipsまでのずれなら約定させるか（許容スリッページ）を設定できる場合があります。</p>
+<ul>
+<li>幅を狭くすると、大きくずれた価格での約定は避けやすいが、注文が成立しないことがある</li>
+<li>幅を広くすると、約定しやすくなるが、ずれる可能性は残る</li>
+<li>設定できる注文の種類（新規・決済、成行・ストリーミング注文など）は会社ごとに違う</li>
+<li>逆指値やロスカットには、許容幅の設定が使えないことが多い</li>
+</ul>
+<p>設定の有無と名前、使える注文は、会社によって違います（最新の内容は<span class="unverified">未確認</span>）。口座を開く前に、取引説明書の「約定」「スリッページ」の項目を確認してください。</p>
+<h2>損益への影響を、pipsで考える</h2>
+<p>スリッページの大きさは、pipsで考えると影響を見積もりやすくなります。たとえば米ドル/円で、1万通貨の取引なら、1pips（0.01円）のずれで100円の差になります。取引数量が多いほど、同じずれでも金額は大きくなります。pipsと損益の計算は、<a href="../../articles/fx-pips-soneki/">FXのpipsと損益の計算。注文の前に、1pips動いたらいくら増減するかを確かめる</a>で整理しています。</p>
+<p>スプレッド（買値と売値の差）も、取引のコストとして考えます。スプレッドの広がりとスリッページは別のものですが、相場が急に動く場面では、両方が起きることがあります。スプレッドの確認先は、<a href="../../articles/fx-spread-swap/">FXのスプレッドとスワップは、どこを公式で確認するか</a>を参考にしてください。</p>
+<h2>注文の前に確認すること</h2>
+<ul>
+<li>取引説明書で、成行・逆指値の約定のしかたと、スリッページの扱いを読む</li>
+<li>許容スリッページを設定できるか、どの注文に使えるか</li>
+<li>経済指標の発表予定と、取引の少ない時間帯を確認する</li>
+<li>逆指値が不利な価格で約定した場合も含めて、損失の上限を考える</li>
+<li>証拠金に余裕を持たせ、ロスカットの水準を把握する</li>
+</ul>
+<p>ロスカットも、急変時には想定より不利な価格で執行されることがあります。仕組みは、<a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a>で整理しています。</p>
+<h2>取引説明書を確認する窓口の例</h2>
+<p>公式サイトで取引説明書や注文の仕様を確認する一例として、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCH+GDF8R6+1WP2+69WPU" target="_blank" rel="sponsored nofollow noopener noreferrer">DMM FX</a>、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCL+12PA6Q+48D0+68EPE" target="_blank" rel="sponsored nofollow noopener noreferrer">FXTF</a>があります。約定の方式、許容スリッページの設定の有無、取引数量の単位は、会社と時期によって違います（最新の内容は<span class="unverified">未確認</span>）。特定の会社を勧めるものではなく、スリッページが起きないことや、利益は保証できません。FXは元本を割り込むことがあります。最新の手数料・条件は公式サイトでご確認ください。</p>
+<h2>よくある質問</h2>
+<p><strong>スリッページは、いつも不利な方向に起きますか。</strong> 成行注文では、有利な方向にずれることもあります。ただ、急変時の逆指値など、不利な方向にずれやすい場面もあります。会社の約定の扱いを取引説明書で確認してください。</p>
+<p><strong>逆指値を置いておけば、損失はその価格までで止まりますか。</strong> 止まるとは限りません。価格が飛んだ場合、指定した価格より不利な価格で約定することがあります。</p>
+<p><strong>許容スリッページを0にすれば、ずれはなくなりますか。</strong> 設定できる会社でも、幅を狭くすると注文が成立しないことがあります。どの注文に使えるかを含めて、取引説明書で確認してください。</p>
+<h2>まとめ</h2>
+<ul>
+<li>スリッページは、注文時の価格と約定価格のずれ。価格の急変や取引の少ない時間帯で起きやすい</li>
+<li>指値は不利な方向にずれないが約定しないことがある。成行・逆指値はずれることがある</li>
+<li>許容スリッページの設定は会社ごとに違う。取引説明書で確認する</li>
+<li>ずれの影響はpipsと取引数量で見積もる</li>
+<li>最新の情報は、各社の公式サイトでご確認ください</li>
+</ul>
+<section class="next-step" id="next-step">
+<h2>次のステップ：公式ページで確認する</h2>
+<p><strong>広告（PR）。</strong>公式案内や関連する本を確認する窓口の一例として、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCH+GDF8R6+1WP2+69WPU" target="_blank" rel="sponsored nofollow noopener noreferrer">DMM FX</a>、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCL+12PA6Q+48D0+68EPE" target="_blank" rel="sponsored nofollow noopener noreferrer">FXTF</a>があります。推奨ではありません。投資の利益、元本の保全、税負担の軽減は保証しません。最新情報は公式サイトでご確認ください。</p>
+<p>関連する確認は、<a href="../../articles/fx-shihyo-mado/">経済指標の発表時と週明けの窓開けで、FXの注文に起きやすいこと</a>、<a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a>、<a href="../../articles/fx-spread-swap/">FXのスプレッドとスワップは、どこを公式で確認するか</a>も見てください。</p>
+</section>
+
+        </div>
+        <p class="article-endnote">本記事は一般的な情報提供です。税務助言、投資助言、特定の商品・業者・求人の推奨ではありません。制度やサービス内容は変わることがあります。最新の公式情報を確認してください。確認できていない事項は「未確認」と表示しています。就職、収入、税負担の軽減、投資の利益、最安値などは保証できません。</p>
+        <section class="related"><h2>関連する記事</h2><ul><li><a href="../../articles/fx-spread-swap/">FXのスプレッドとスワップは、どこを公式で確認するか</a></li><li><a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a></li><li><a href="../../articles/fx-benkyo-hon/">FXの勉強に役立つ本の選び方</a></li><li><a href="../../articles/fx-koza-kakunin/">FX口座を開く前に、取引単位・取引時間・登録情報を確認する</a></li></ul></section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul class="footer-nav">
+        <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+      </ul>
+      <nav class="sister-sites" aria-label="姉妹サイト">
+        <h2>姉妹サイト</h2>
+        <ul>
+        <li><a href="https://ats-business-hub.github.io/jitsumu-guide/">BON ZAM SHIBA｜働く人の実務ガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/travel-yoyaku-guide/">旅の予約ノート</a></li>
+        <li><a href="https://jobs.agtwn.com/">IT転職・社内SEガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/hikari-kaisen-guide/">光回線の申し込み前ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/hoken-sodan-guide/">保険相談の確認ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/online-school-guide/">オンラインスクールの申し込み前ノート</a></li>
+        </ul>
+      </nav>
+      <p>運営：BON ZAM SHIBA　｜　仕組みとリスクを先に整理する</p>
+      <p>記事内のリンクの一部には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）が含まれます。詳細は「プライバシー・広告」をご覧ください。</p>
+      <p>就職、転職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。制度や各サービスの条件は公式情報で確認してください。確認できていない事項は「未確認」と表示します。</p>
+      <p class="small">© 2026 BON ZAM SHIBA</p>
+    </div>
+  </footer>
+</body>
+</html>
