@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FXのトレール注文（トレーリングストップ）とは。価格に合わせて決済の逆指値が動く仕組みと、使う前に確認すること｜はじめての投資・FX入門</title>
+  <meta name="description" content="トレール注文は、相場が有利な方向に動くと、決済の逆指値の価格が自動で追いかけて動く注文です。仕組み、値幅（トレール幅）の考え方、有利な方向にしか動かないこと、スリッページや窓開けで決済価格がずれること、各社で取り扱いや設定の単位が違うことを、取引説明書で確認する点として整理します。利益は保証しません。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="FXのトレール注文（トレーリングストップ）とは。価格に合わせて決済の逆指値が動く仕組みと、使う前に確認すること｜はじめての投資・FX入門">
+  <meta property="og:description" content="トレール注文は、相場が有利な方向に動くと、決済の逆指値の価格が自動で追いかけて動く注文です。仕組み、値幅（トレール幅）の考え方、有利な方向にしか動かないこと、スリッページや窓開けで決済価格がずれること、各社で取り扱いや設定の単位が違うことを、取引説明書で確認する点として整理します。利益は保証しません。">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://ats-business-hub.github.io/toushi-fx-nyumon/articles/fx-trail-chumon/">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-desktop">
+      <div class="header-inner">
+        <a class="brand" href="../../">
+          <span class="mark">投</span>
+          <span class="brand-text">
+            <span class="brand-name">はじめての投資・FX入門</span>
+            <span class="brand-tag">仕組みとリスクを先に整理する</span>
+          </span>
+        </a>
+        <label class="nav-toggle" for="nav-check" aria-label="メニューを開く"><span></span></label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <nav class="site-nav" aria-label="主要">
+        <ul>
+          <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <article class="wrap">
+      <header class="article-header measure">
+        <nav class="crumbs" aria-label="パンくず"><a href="../../">トップ</a> ／ <a href="../../categories/fx/">FX</a> ／ FXのトレール注文（トレーリングストップ）とは。価格に合わせて決済の逆指値が動く仕組みと、使う前に確認すること</nav>
+        <p class="kicker">FX</p>
+        <h1>FXのトレール注文（トレーリングストップ）とは。価格に合わせて決済の逆指値が動く仕組みと、使う前に確認すること</h1>
+        <p class="meta">公開日（サイト原稿）：2026-11-28　記述の基準日：2026-11-28</p>
+      </header>
+      <div class="measure">
+        <p class="pr-notice"><strong>広告（PR）について。</strong>本記事には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）リンクが含まれます。リンク経由で申し込みや利用があった場合、運営者が紹介料を受け取ることがあります。リンクはテキストのみです。就職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。各サービスの対象条件・成果地点・料金は、申し込み前に公式ページで確認してください。</p>
+        <div class="article-body">
+<p class="next-step-jump"><a href="#next-step">▶ 比べる点と窓口の例は「次のステップ」へ（広告を含みます）</a></p>
+          <p>FXで買いのポジションを持っていて、価格が上がって含み益が出てきたとき、「もう少し伸びるかもしれないが、下がったら利益があるうちに決済したい」と考えることがあります。こうしたときに使われる注文の一つが、トレール注文（トレーリングストップ）です。</p>
+<p>この記事は、トレール注文の仕組みと、使う前に確認したい点を整理したものです。特定のFX会社を勧めるものではなく、利益や、損失が想定の範囲に収まることは保証できません。FXは元本を割り込むことがあり、レバレッジをかけると損失が大きくなることがあります。トレール注文を扱うかどうか、設定のしかたは会社によって違うため、最後は各社の取引説明書と公式サイトで確認してください。</p>
+<h2>トレール注文の仕組み</h2>
+<p>トレール注文は、決済の逆指値注文の一種です。最初に「現在の価格から◯pips離れたところ」に逆指値を置き、相場が有利な方向に動くと、その値幅を保ったまま、逆指値の価格が自動で追いかけて動きます。</p>
+<table>
+<thead>
+<tr>
+<th>場面</th>
+<th>買いポジションの例</th>
+<th>逆指値の動き</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>注文を出したとき</td>
+<td>現在150.00円、トレール幅50銭</td>
+<td>逆指値は149.50円</td>
+</tr>
+<tr>
+<td>価格が上がった</td>
+<td>150.80円まで上昇</td>
+<td>逆指値は150.30円に上がる</td>
+</tr>
+<tr>
+<td>価格が下がった</td>
+<td>150.80円から下落</td>
+<td>逆指値は150.30円のまま動かない</td>
+</tr>
+<tr>
+<td>さらに下がった</td>
+<td>150.30円に到達</td>
+<td>決済の注文が出る</td>
+</tr>
+</tbody>
+</table>
+<p>ポイントは、<strong>逆指値は有利な方向にしか動かない</strong>ことです。価格が下がっても、逆指値は元に戻りません。上の表の数字は仕組みを説明するための例で、実際の値動きや結果を示すものではありません。pipsと損益の換算は、<a href="../../articles/fx-pips-soneki/">FXのpipsと損益の計算。注文の前に、1pips動いたらいくら増減するかを確かめる</a>で整理しています。</p>
+<h2>トレール幅の考え方</h2>
+<p>トレール幅を狭くすると、少しの値動きで決済されやすくなります。広くすると、決済されにくくなる一方で、決済されたときに含み益から減る幅が大きくなります。</p>
+<ul>
+<li>通貨ペアの普段の値動きの大きさ</li>
+<li>スプレッドの広さ（幅が狭すぎると、スプレッドの変動だけで決済されることがある）</li>
+<li>経済指標の発表や、取引の少ない時間帯</li>
+</ul>
+<p>どの幅がよいかは、通貨ペアと時期、自分の取引の考え方によって違うため、ここでは示しません。デモ口座がある会社では、本番の前に動き方を試してみる方法もあります。</p>
+<h2>決済の価格は、逆指値とずれることがある</h2>
+<p>トレール注文で逆指値に達すると、決済の注文が出ますが、その価格で約定するとは限りません。</p>
+<ul>
+<li><strong>スリッページ。</strong> 値動きが速いときは、逆指値より不利な価格で約定することがある。<a href="../../articles/fx-slippage-yakujo/">FXのスリッページとは。成行・逆指値の注文で、約定価格が見ていた価格とずれる理由と、注文の前に確認すること</a>も参考にしてください</li>
+<li><strong>窓開け。</strong> 週明けなどに価格が飛んで始まると、逆指値から大きく離れた価格で約定することがある</li>
+<li><strong>ロスカット。</strong> 証拠金が不足すると、トレール注文とは別に、ロスカットで強制的に決済されることがある。<a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a>で整理しています</li>
+</ul>
+<h2>使う前に確認すること</h2>
+<ul>
+<li><strong>取り扱いの有無。</strong> トレール注文を扱っているか、取引ツール（パソコン・スマホ）のどれで使えるか</li>
+<li><strong>設定の単位。</strong> トレール幅を銭・pipsのどちらで入力するか、最小の幅、刻み</li>
+<li><strong>逆指値が動く基準。</strong> 売値・買値のどちらを基準に追いかけるか</li>
+<li><strong>ほかの注文との組み合わせ。</strong> 新規注文と同時に設定できるか、IFDやOCOと組み合わせられるか</li>
+<li><strong>有効期限。</strong> 注文の有効期限と、週末をまたぐときの扱い</li>
+<li><strong>サーバー側で動くか。</strong> 取引ツールを閉じても、逆指値の追いかけが続くか</li>
+</ul>
+<h2>取引説明書を確認する窓口の例</h2>
+<p>注文の種類や、トレール注文の取り扱いを、公式の取引説明書で確認する一例として、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCH+GDF8R6+1WP2+69WPU" target="_blank" rel="sponsored nofollow noopener noreferrer">DMM FX</a>、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCL+12PA6Q+48D0+68EPE" target="_blank" rel="sponsored nofollow noopener noreferrer">FXTF</a>があります。扱う注文の種類、設定の単位、取引ツールは、会社と時期によって違います（最新の内容は<span class="unverified">未確認</span>）。各社がトレール注文を扱っているかも、公式サイトで確かめてください。特定の会社を勧めるものではなく、利益は保証できません。最新の手数料・条件は公式サイトでご確認ください。口座を選ぶ前の確認点は、<a href="../../articles/fx-koza-kakunin/">FX口座を開く前に、取引単位・取引時間・登録情報を確認する</a>で整理しています。</p>
+<h2>よくある質問</h2>
+<p><strong>トレール注文を使えば、損をしなくなりますか。</strong> なりません。最初に置いた逆指値の位置によっては損失で決済されますし、スリッページや窓開けで想定より不利な価格になることもあります。</p>
+<p><strong>トレール注文と、普通の逆指値注文の違いは何ですか。</strong> 普通の逆指値は、自分で価格を変えない限り動きません。トレール注文は、有利な方向に動いた分だけ、逆指値が自動で追いかけて動きます。</p>
+<p><strong>売りのポジションにも使えますか。</strong> 使える会社が多いですが、その場合は価格が下がると逆指値が下に追いかけて動きます。会社の取引説明書で確認してください。</p>
+<h2>まとめ</h2>
+<ul>
+<li>トレール注文は、有利な方向に動くと決済の逆指値が自動で追いかける注文</li>
+<li>逆指値は有利な方向にしか動かない</li>
+<li>トレール幅は、通貨ペアの値動きやスプレッドを踏まえて考える</li>
+<li>決済の価格は、スリッページや窓開けで逆指値とずれることがある</li>
+<li>取り扱いと設定のしかたは、各社の取引説明書でご確認ください</li>
+</ul>
+<section class="next-step" id="next-step">
+<h2>次のステップ：公式ページで確認する</h2>
+<p><strong>広告（PR）。</strong>公式案内や関連する本を確認する窓口の一例として、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCH+GDF8R6+1WP2+69WPU" target="_blank" rel="sponsored nofollow noopener noreferrer">DMM FX</a>、<a href="https://px.a8.net/svt/ejp?a8mat=4BGNCL+12PA6Q+48D0+68EPE" target="_blank" rel="sponsored nofollow noopener noreferrer">FXTF</a>があります。推奨ではありません。投資の利益、元本の保全、税負担の軽減は保証しません。最新情報は公式サイトでご確認ください。</p>
+<p>関連する確認は、<a href="../../articles/fx-slippage-yakujo/">FXのスリッページとは。成行・逆指値の注文で、約定価格が見ていた価格とずれる理由と、注文の前に確認すること</a>、<a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a>、<a href="../../articles/fx-pips-soneki/">FXのpipsと損益の計算。注文の前に、1pips動いたらいくら増減するかを確かめる</a>も見てください。</p>
+</section>
+
+        </div>
+        <p class="article-endnote">本記事は一般的な情報提供です。税務助言、投資助言、特定の商品・業者・求人の推奨ではありません。制度やサービス内容は変わることがあります。最新の公式情報を確認してください。確認できていない事項は「未確認」と表示しています。就職、収入、税負担の軽減、投資の利益、最安値などは保証できません。</p>
+        <section class="related"><h2>関連する記事</h2><ul><li><a href="../../articles/fx-spread-swap/">FXのスプレッドとスワップは、どこを公式で確認するか</a></li><li><a href="../../articles/fx-losscut-ijiritsu/">FXの証拠金維持率とロスカットは、何を止めて、何を止められないか</a></li><li><a href="../../articles/fx-benkyo-hon/">FXの勉強に役立つ本の選び方</a></li><li><a href="../../articles/fx-koza-kakunin/">FX口座を開く前に、取引単位・取引時間・登録情報を確認する</a></li></ul></section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul class="footer-nav">
+        <li><a href="../../">トップ</a></li>
+          <li><a href="../../categories/nisa/">新NISAの基礎</a></li>
+          <li><a href="../../categories/stock/">株と口座</a></li>
+          <li><a href="../../categories/fx/">FX</a></li>
+          <li><a href="../../categories/risk-tax/">リスクと税金</a></li>
+          <li><a href="../../about/">運営者情報</a></li>
+          <li><a href="../../privacy/">プライバシー・広告</a></li>
+          <li><a href="../../contact/">お問い合わせ</a></li>
+      </ul>
+      <nav class="sister-sites" aria-label="姉妹サイト">
+        <h2>姉妹サイト</h2>
+        <ul>
+        <li><a href="https://ats-business-hub.github.io/jitsumu-guide/">BON ZAM SHIBA｜働く人の実務ガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/travel-yoyaku-guide/">旅の予約ノート</a></li>
+        <li><a href="https://jobs.agtwn.com/">IT転職・社内SEガイド</a></li>
+        <li><a href="https://ats-business-hub.github.io/hikari-kaisen-guide/">光回線の申し込み前ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/hoken-sodan-guide/">保険相談の確認ノート</a></li>
+        <li><a href="https://ats-business-hub.github.io/online-school-guide/">オンラインスクールの申し込み前ノート</a></li>
+        </ul>
+      </nav>
+      <p>運営：BON ZAM SHIBA　｜　仕組みとリスクを先に整理する</p>
+      <p>記事内のリンクの一部には、A8.net、バリューコマースなどのアフィリエイト（成果報酬型広告）が含まれます。詳細は「プライバシー・広告」をご覧ください。</p>
+      <p>就職、転職、収入、税負担の軽減、投資の利益、最安値などを保証するものではありません。制度や各サービスの条件は公式情報で確認してください。確認できていない事項は「未確認」と表示します。</p>
+      <p class="small">© 2026 BON ZAM SHIBA</p>
+    </div>
+  </footer>
+</body>
+</html>
